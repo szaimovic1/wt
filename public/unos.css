@@ -1,0 +1,114 @@
+body{
+    resize: both;
+    margin: 0;
+    padding: 0;
+}
+
+.meni{
+    background-color: #ceb6b7;
+    margin: 0 auto;
+    width: 90%;
+    min-width: fit-content;
+    margin-top: 3%;
+    box-shadow: 0 1px 6px rgb(16, 73, 128), 0 1px 4px rgb(16, 73, 128);
+}
+
+.meni ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.meni li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.meni a{
+    color: rgb(16, 73, 128);
+    font-weight: bold;
+}
+
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.logo{
+    transform: translate(0, -50%)
+}
+
+#trenutna{
+    color: #551A8B;
+    text-decoration: none;
+}
+
+.sadrzaj{
+    background-color:  #ceb6b7;
+    padding: 8%;
+    height: fit-content;
+    width: 74%;
+    min-width: fit-content;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px rgb(16, 73, 128), 0 1px 4px rgb(16, 73, 128);
+}
+
+.forma{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 300px;
+    height: 60%;
+    background-color: #c28285;
+    padding-top: 5%;
+    box-shadow: 0 1px 6px rgb(16, 73, 128), 0 1px 4px rgb(16, 73, 128);
+}
+
+label{
+    text-align: left;
+    margin-top: 3%;
+    display: inline-block;
+    width: 120px;
+    color: rgb(16, 73, 128);
+}
+
+input[name=unos]{
+    background-color: #aaa9ad;
+    border-color: rgb(13, 69, 121);
+    margin-top: 3%;
+    height: 5em;
+    color: rgb(16, 73, 128);
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .meni li{
+        display: list-item;
+    }
+
+    .forma{
+        width: fit-content;
+    }
+
+    label{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+

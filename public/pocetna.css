@@ -1,0 +1,141 @@
+
+body{
+    resize: both;
+    margin: 0;
+    padding: 0;
+}
+
+.meni{
+    background-color: #ceb6b7;
+    margin: 0 auto;
+    width: 90%;
+    min-width: fit-content;
+    margin-top: 3%;
+    box-shadow: 0 1px 6px rgb(16, 73, 128), 0 1px 4px rgb(16, 73, 128);
+}
+
+.meni ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.meni li{
+    display: inline-block;
+    margin: 5px;
+}
+
+.meni a{
+    color: rgb(16, 73, 128);
+    font-weight: bold;
+}
+
+.logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.logo{
+    transform: translate(0, -50%)
+}
+
+#trenutna{
+    color: #551A8B;
+    text-decoration: none;
+}
+
+.sadrzaj{
+    background-color: #ceb6b7;
+    width: 90%;
+    min-width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    /*grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));*/
+    /*display: inline-grid;*/
+    box-shadow: 0 1px 6px rgb(16, 73, 128), 0 1px 4px rgb(16, 73, 128);
+}
+
+/*.grid-item {
+    height: fit-content;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: #ceb6b7;
+}
+
+.grid-item:nth-child(3n) {
+    background-color: #ceb6b7;
+}
+
+.grid-item img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 0 1px 6px rgb(16, 73, 128), 0 1px 4px rgb(16, 73, 128);
+}*/
+
+img{
+    margin: 0 auto;
+}
+
+.prethodne{
+    transform: translate(40px);
+    float: left;
+    display: block;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: x-large;
+    color: rgb(16, 73, 128);
+    background-color: #c28285;
+}
+
+.sljedece{
+    transform: translate(-40px);
+    float: right;
+    display: block;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: x-large;
+    color: rgb(16, 73, 128);
+    background-color: #c28285;
+}
+
+@media screen and (min-width: 900px){
+    .sadrzaj{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .grid-item img{
+        height: 80%;
+        width: 80%;
+    }
+
+    .meni li{
+        display: list-item;
+    }
+
+    .sadrzaj{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+

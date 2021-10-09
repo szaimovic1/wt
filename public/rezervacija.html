@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="rezervacija.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <title>Z1</title>
+</head>
+<body>
+    <div class="meni">
+        <div class="logo">
+            <img src="logo.png" alt="logo"> 
+        </div>
+        <ul>
+            <li><a href="pocetna.html">POČETNA</a></li>
+            <li><a href="sale.html">SALE</a></li>
+            <li><a href="unos.html">UNOS</a></li>
+            <li><a id="trenutna" href="rezervacija.html">REZERVACIJE</a></li>
+            <li><a href="osoblje.html">OSOBE</a></li>
+        </ul>
+    </div>
+
+    <div class="sadrzaj">
+            <form class="forma" id="izmjena">
+                    <label>Izaberite salu:</label>
+                    <select name="sale" id="prostorije">
+                       
+                    </select><br>
+                    <label>Izaberite osoblje:</label>
+                    <select name="osoblje" id="osobe">
+                        
+                    </select><br>
+                    <label>Početak:</label>
+                    <input type="time" id="pocetak"><br>
+                    <label>Kraj:</label>
+                    <input type="time" id="kraj"><br>
+                    <label id="labelaCB">Periodična rezervacija:</label> 
+                    <input type="checkbox" name="box" id="periodicna">
+                </form>
+
+                <div class="kalendar">
+                        <button class="prethodni" id="prethodniMjesec">&#171;</button>
+                        <button class="sljedeci" id="sljedeciMjesec">&#187;</button>
+                    <table class="mjesec" id="tabela">
+                        <tr>
+                            <td colspan="7" class="nazivMjeseca" id="nazivMjeseca"></td>
+                        </tr>
+                        <tr class="sedmica">
+                            <td class="dan">PON</td>
+                            <td class="dan">UTO</td>
+                            <td class="dan">SRI</td>
+                            <td class="dan">ČET</td>
+                            <td class="dan">PET</td>
+                            <td class="dan">SUB</td>
+                            <td class="dan">NED</td>
+                        </tr>
+                            <tbody id="tijelo-kalendara"></tbody>
+                    </table>
+                </div>
+    </div>
+    <script src="kalendar.js"></script>
+    <script src="pozivi.js"></script>
+    <script src="rezervacija.js"></script>
+    
+</body>
+</html>
